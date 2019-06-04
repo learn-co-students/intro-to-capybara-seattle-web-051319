@@ -1,4 +1,9 @@
 class Application < Sinatra::Base
-  # Write your code here!
+  get '/' do
+    erb :index # response = render this file
+  end
 
+  post '/greet' do
+    erb :greet 
+  end
 end
